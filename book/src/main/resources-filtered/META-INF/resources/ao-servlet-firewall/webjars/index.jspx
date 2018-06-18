@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ao-servlet-firewall-webjars - AO Servlet Firewall rules for WebJars.
+Copyright (C) 2018  AO Industries, Inc.
+    support@aoindustries.com
+    7262 Bull Pen Cir
+    Mobile, AL 36695
+
+This file is part of ao-servlet-firewall-webjars.
+
+ao-servlet-firewall-webjars is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+ao-servlet-firewall-webjars is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/licenses />.
+-->
+<jsp:root
+	xmlns:ao="https://aoindustries.com/ao-taglib/"
+	xmlns:core="https://semanticcms.com/core/taglib/"
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:section="https://semanticcms.com/section/taglib/"
+	version="2.1"
+>
+	<jsp:directive.page language="java" pageEncoding="UTF-8" session="false" />
+	<core:page
+		title="@{documented.name}"
+		shortTitle="@{documented.shortTitle}"
+		description="@{documented.description}"
+		datePublished="2018-06-18T14:09:27-0500"
+	>
+		<core:child page="changelog" />
+		<core:child page="apidocs/" />
+		<ao:include
+			page="/ao-badges/badges.inc.jspx"
+			arg.projectStatus="${currentPage.property.projectStatus}"
+			arg.managementStatus="${currentPage.property.managementStatus}"
+			arg.packagingStatus="${currentPage.property.packagingStatus}"
+			arg.javaVersion="${currentPage.property.javaVersion}"
+			arg.javaeeVersion="${currentPage.property.javaeeVersion}"
+			arg.semanticVersioning="${currentPage.property.semanticVersioning}"
+			arg.license="${currentPage.property.license}"
+		/>
+		<p>
+			<core:link book="/ao-servlet-firewall" /> rules for <ao:a href="https://www.webjars.org/">WebJars</ao:a>.
+		</p>
+		<section:section label="Project Links">
+			<ul>
+				<li><core:link page="/">Project Home</core:link></li>
+				<li><core:link page="changelog">Changelog</core:link></li>
+				<li><core:link page="apidocs/">API Docs</core:link></li>
+				<li><ao:a href="https://search.maven.org/#search%7Cgav%7C1%7Cg:%22@{documented.groupId}%22%20AND%20a:%22@{documented.artifactId}%22">Maven Central Repository</ao:a></li>
+				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
+			</ul>
+		</section:section>
+		<section:section label="Features">
+			<ul>
+				<li>Reserves greedy <core:link book="/ao-servlet-firewall/path-space">Path Space</core:link> for <code>/webjars/***</code> (no components in sub-paths may be added).</li>
+				<li>
+					Constrains <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html#getMethod()">request method</ao:a> to
+					<code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
+				</li>
+				<li>TODO: Block all parameters for canonicalization?  Only allow LastModified?  301/302/307 redirect LastModified when doens't match current LastModified (impact on clustering?)?</li>
+				<li>Small footprint, minimal dependencies - not part of a big monolithic package.</li>
+				<li>Java 1.6 implementation:
+					<ul>
+						<li>Java EE 6+ compatible.</li>
+					</ul>
+				</li>
+			</ul>
+		</section:section>
+		<section:section label="Motivation">
+			<p>
+				<ao:a href="https://www.webjars.org/">WebJars</ao:a> are wonderfully easy-to-use, just add a dependency to your project and off you go.
+				This reserves <core:link book="/ao-servlet-firewall/path-space">Path Space</core:link> for <code>/webjars/***</code> and opens the
+				<core:link book="/ao-servlet-firewall" /> to <code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
+				Just add this project as an additional dependency and the firewall rules are ready-to-go (assuming <code>metadata-complete="false"</code> in <code>/WEB-INF/web.xml</code>).
+			</p>
+		</section:section>
+		<section:section label="Alternatives">
+			<p>
+				As this is a component specific to <core:link book="/ao-servlet-firewall" />, no ready-made alternatives exist.  It would also be possible to create your own rules,
+				or rely on a default rule that opens all non-component paths (like <code>/** -> chain.doFilter</code>).
+			</p>
+		</section:section>
+	</core:page>
+</jsp:root>
