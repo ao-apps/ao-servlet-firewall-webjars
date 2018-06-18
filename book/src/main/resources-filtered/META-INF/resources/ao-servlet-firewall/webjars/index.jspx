@@ -34,6 +34,7 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2018-06-18T14:09:27-0500"
+		dateModified="2018-06-18T14:21:05-0500"
 	>
 		<core:child page="changelog" />
 		<core:child page="apidocs/" />
@@ -66,7 +67,7 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 					Constrains <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html#getMethod()">request method</ao:a> to
 					<code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
 				</li>
-				<li>TODO: Block all parameters for canonicalization?  Only allow LastModified?  301/302/307 redirect LastModified when doens't match current LastModified (impact on clustering?)?</li>
+				<li>TODO: Block all parameters for canonicalization?  Only allow LastModified?  301/302/307 redirect LastModified when doesn't match current LastModified (impact on clustering?)?</li>
 				<li>Small footprint, minimal dependencies - not part of a big monolithic package.</li>
 				<li>Java 1.6 implementation:
 					<ul>
