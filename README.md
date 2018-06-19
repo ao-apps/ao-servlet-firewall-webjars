@@ -42,7 +42,7 @@
     * Java EE 6+ compatible.
 
 ## Motivation
-[WebJars](https://www.webjars.org/) are wonderfully easy-to-use, just add a dependency to your project and off you go.  This reserves [Path Space](https://github.com/aoindustries/ao-servlet-firewall-path-space) for `/webjars/***` and opens the [AO Servlet Firewall](https://github.com/aoindustries/ao-servlet-firewall) to `OPTIONS`, `HEAD`, and `GET`.  Just add this project as an additional dependency and the firewall rules are ready-to-go (assuming `metadata-complete="false"` in `/WEB-INF/web.xml`).
+[WebJars](https://www.webjars.org/) are wonderfully easy-to-use, just add a dependency to your project and off you go.  This project reserves [Path Space](https://github.com/aoindustries/ao-servlet-firewall-path-space) for `/webjars/***` and opens the [AO Servlet Firewall](https://github.com/aoindustries/ao-servlet-firewall) to `OPTIONS`, `HEAD`, and `GET`.  Just add this project as an additional dependency and the firewall rules are ready-to-go (assuming `metadata-complete="false"` in `/WEB-INF/web.xml`).
 
 ## Evaluated Alternatives
 As this is a component specific to [AO Servlet Firewall](https://github.com/aoindustries/ao-servlet-firewall), no ready-made alternatives exist.  It would also be possible to create your own rules, or rely on a default rule that opens all non-component paths (like `/** -> chain.doFilter`).
