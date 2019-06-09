@@ -51,7 +51,7 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 			/>
 		</header>
 		<p>
-			<core:link book="/ao-servlet-firewall" /> rules for <ao:a href="https://www.webjars.org/">WebJars</ao:a>.
+			<core:link book="/ao-servlet-firewall" page="/index.jspx" /> rules for <ao:a href="https://www.webjars.org/">WebJars</ao:a>.
 		</p>
 		<section:nav label="Project Links">
 			<ul>
@@ -64,7 +64,7 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 		</section:nav>
 		<section:section label="Features">
 			<ul>
-				<li>Reserves greedy <core:link book="/ao-servlet-firewall/path-space">Path Space</core:link> for <code>/webjars/***</code> (no components in sub-paths may be added).</li>
+				<li>Reserves greedy <core:link book="/ao-servlet-firewall/path-space" page="/index.jspx">Path Space</core:link> for <code>/webjars/***</code> (no components in sub-paths may be added).</li>
 				<li>
 					Constrains <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html#getMethod()">request method</ao:a> to
 					<code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
@@ -81,14 +81,14 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 		<section:section label="Motivation">
 			<p>
 				<ao:a href="https://www.webjars.org/">WebJars</ao:a> are wonderfully easy-to-use, just add a dependency to your project and off you go.
-				This project reserves <core:link book="/ao-servlet-firewall/path-space">Path Space</core:link> for <code>/webjars/***</code> and opens the
-				<core:link book="/ao-servlet-firewall" /> to <code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
+				This project reserves <core:link book="/ao-servlet-firewall/path-space" page="/index.jspx">Path Space</core:link> for <code>/webjars/***</code> and opens the
+				<core:link book="/ao-servlet-firewall" page="/index.jspx" /> to <code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
 				Just add this project as an additional dependency and the firewall rules are ready-to-go (assuming <code>metadata-complete="false"</code> in <code>/WEB-INF/web.xml</code>).
 			</p>
 		</section:section>
 		<section:aside label="Alternatives">
 			<p>
-				As this is a component specific to <core:link book="/ao-servlet-firewall" />, no ready-made alternatives exist.  It would also be possible to create your own rules,
+				As this is a component specific to <core:link book="/ao-servlet-firewall" page="/index.jspx" />, no ready-made alternatives exist.  It would also be possible to create your own rules,
 				or rely on a default rule that opens all non-component paths (like <code>/** -> chain.doFilter</code>).
 			</p>
 		</section:aside>

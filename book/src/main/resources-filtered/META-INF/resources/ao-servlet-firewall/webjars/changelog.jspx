@@ -53,7 +53,7 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 				scmUrl="@{documented.scm.url}"
 			>
 				<ol>
-					<li>New project for <core:link book="/ao-servlet-firewall" /> rules for <ao:a href="https://www.webjars.org/">WebJars</ao:a>.</li>
+					<li>New project for <core:link book="/ao-servlet-firewall" page="/index.jspx" /> rules for <ao:a href="https://www.webjars.org/">WebJars</ao:a>.</li>
 				</ol>
 			</changelog:release>
 		</c:if>
