@@ -67,6 +67,7 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 								<link>${javac.link.javaeeApi.6}</link>
 								<!-- Direct -->
 								<link>https://aoindustries.com/ao-net-path-space/apidocs/</link>
+								<link>https://aoindustries.com/ao-servlet-firewall/api/apidocs/</link>
 								<link>https://aoindustries.com/ao-servlet-firewall/path-space/apidocs/</link>
 								<link>https://aoindustries.com/ao-servlet-firewall/rules/apidocs/</link>
 							</links>
@@ -90,6 +91,9 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 				<groupId>com.aoindustries</groupId><artifactId>ao-net-path-space</artifactId><version>1.0.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-firewall-api</artifactId><version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-firewall-path-space</artifactId><version>1.0.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
@@ -107,6 +111,9 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 		<!-- Direct -->
 		<dependency>
 			<groupId>com.aoindustries</groupId><artifactId>ao-net-path-space</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.aoindustries</groupId><artifactId>ao-servlet-firewall-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.aoindustries</groupId><artifactId>ao-servlet-firewall-path-space</artifactId>
