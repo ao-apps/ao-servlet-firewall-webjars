@@ -1,6 +1,6 @@
 /*
  * ao-servlet-firewall-webjars - AO Servlet Firewall rules for WebJars.
- * Copyright (C) 2018  AO Industries, Inc.
+ * Copyright (C) 2018, 2020  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -32,8 +32,8 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Reserves greedy Path Space for " + WebJarsContextListener.PREFIX + " (no components in sub-paths may be added).")
-public class WebJarsContextListener implements ServletContextListener {
+@WebListener("Reserves greedy Path Space for " + Initializer.PREFIX + " (no components in sub-paths may be added).")
+public class Initializer implements ServletContextListener {
 
 	static final String PREFIX = "/webjars/***";
 
