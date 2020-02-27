@@ -39,7 +39,7 @@ public class Initializer implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		FirewallPathSpace.getFirewallPathSpace(event.getServletContext()).add(
+		FirewallPathSpace.getInstance(event.getServletContext()).add(
 			FirewallComponent.newInstance(
 				valueOf(PREFIX), // TODO: Use string overload of newInstance, once it exists
 				// Constraint REQUEST dispatcher to GET only
