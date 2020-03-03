@@ -32,8 +32,8 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Reserves greedy Path Space for " + Initializer.PREFIX + " (no components in sub-paths may be added).")
-public class Initializer implements ServletContextListener {
+@WebListener("Reserves greedy Path Space for " + WebJars.PREFIX + " (no components in sub-paths may be added).")
+public class WebJars implements ServletContextListener {
 
 	static final String PREFIX = "/webjars/***";
 
