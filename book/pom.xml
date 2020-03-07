@@ -35,8 +35,6 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 	<properties>
 		<!-- These values are copied from the project being documented -->
 		<documented.artifactId>ao-servlet-firewall-webjars</documented.artifactId>
-		<documented.javaVersion>1.8</documented.javaVersion>
-		<documented.javac.link.javaApi>${javac.link.javaApi.jdk8}</documented.javac.link.javaApi>
 		<documented.name>AO Servlet Firewall WebJars</documented.name>
 		<documented.shortTitle>WebJars</documented.shortTitle>
 		<documented.description>AO Servlet Firewall rules for WebJars.</documented.description>
