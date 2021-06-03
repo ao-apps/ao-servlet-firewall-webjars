@@ -22,7 +22,7 @@ You should have received a copy of the GNU Lesser General Public License
 along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/licenses />.
 -->
 <jsp:root
-	xmlns:ao="https://aoindustries.com/ao-taglib/"
+	xmlns:ao="https://oss.aoapps.com/taglib/"
 	xmlns:core="https://semanticcms.com/core/taglib/"
 	xmlns:jsp="http://java.sun.com/JSP/Page"
 	xmlns:section="https://semanticcms.com/section/taglib/"
@@ -32,10 +32,9 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 	<jsp:directive.page session="false" />
 	<core:page
 		title="@{documented.name}"
-		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2018-06-18T14:09:27-05:00"
-		dateModified="2020-03-24T14:01:33-05:00"
+		dateModified="2021-05-31T01:25:50-05:00"
 	>
 		<core:child page="changelog.jspx" />
 		<core:child page="apidocs/index.jspx" />
@@ -52,7 +51,7 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 			/>
 		</header>
 		<p>
-			<core:link book="/ao-servlet-firewall" page="/index.jspx" /> rules for <ao:a href="https://www.webjars.org/">WebJars</ao:a>.
+			<core:link book="/servlet-firewall" page="/index.jspx" /> rules for <ao:a href="https://www.webjars.org/">WebJars</ao:a>.
 		</p>
 		<section:nav label="Project Links">
 			<ul>
@@ -65,7 +64,7 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 		</section:nav>
 		<section:section label="Features">
 			<ul>
-				<li>Reserves greedy <core:link book="/ao-servlet-firewall/path-space" page="/index.jspx">Path Space</core:link> for <code>/webjars/***</code> (no components in sub-paths may be added).</li>
+				<li>Reserves greedy <core:link book="/servlet-firewall/path-space" page="/index.jspx">Path Space</core:link> for <code>/webjars/***</code> (no components in sub-paths may be added).</li>
 				<li>
 					Constrains <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html#getMethod()">request method</ao:a> to
 					<code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
@@ -82,14 +81,14 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 		<section:section label="Motivation">
 			<p>
 				<ao:a href="https://www.webjars.org/">WebJars</ao:a> are wonderfully easy-to-use, just add a dependency to your project and off you go.
-				This project reserves <core:link book="/ao-servlet-firewall/path-space" page="/index.jspx">Path Space</core:link> for <code>/webjars/***</code> and opens the
-				<core:link book="/ao-servlet-firewall" page="/index.jspx" /> to <code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
+				This project reserves <core:link book="/servlet-firewall/path-space" page="/index.jspx">Path Space</core:link> for <code>/webjars/***</code> and opens the
+				<core:link book="/servlet-firewall" page="/index.jspx" /> to <code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
 				Just add this project as an additional dependency and the firewall rules are ready-to-go (assuming <code>metadata-complete="false"</code> in <code>/WEB-INF/web.xml</code>).
 			</p>
 		</section:section>
 		<section:aside label="Alternatives">
 			<p>
-				As this is a component specific to <core:link book="/ao-servlet-firewall" page="/index.jspx" />, no ready-made alternatives exist.  It would also be possible to create your own rules,
+				As this is a component specific to <core:link book="/servlet-firewall" page="/index.jspx" />, no ready-made alternatives exist.  It would also be possible to create your own rules,
 				or rely on a default rule that opens all non-component paths (like <code>/** -> chain.doFilter</code>).
 			</p>
 		</section:aside>
