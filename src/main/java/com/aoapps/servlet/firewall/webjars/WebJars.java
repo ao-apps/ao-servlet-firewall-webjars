@@ -1,6 +1,6 @@
 /*
  * ao-servlet-firewall-webjars - AO Servlet Firewall rules for WebJars.
- * Copyright (C) 2018, 2020  AO Industries, Inc.
+ * Copyright (C) 2018, 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -20,14 +20,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.aoindustries.servlet.firewall.webjars;
+package com.aoapps.servlet.firewall.webjars;
 
-import static com.aoindustries.net.pathspace.Prefix.valueOf;
-import com.aoindustries.servlet.firewall.pathspace.FirewallComponent;
-import com.aoindustries.servlet.firewall.pathspace.FirewallPathSpace;
-import com.aoindustries.servlet.firewall.rules.Rules.chain;
-import com.aoindustries.servlet.firewall.rules.Rules.request;
-import com.aoindustries.servlet.firewall.rules.Rules.response;
+import static com.aoapps.net.pathspace.Prefix.valueOf;
+import com.aoapps.servlet.firewall.pathspace.FirewallComponent;
+import com.aoapps.servlet.firewall.pathspace.FirewallPathSpace;
+import com.aoapps.servlet.firewall.rules.Rules.chain;
+import com.aoapps.servlet.firewall.rules.Rules.request;
+import com.aoapps.servlet.firewall.rules.Rules.response;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
