@@ -85,6 +85,11 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 		<url>https://github.com/aoindustries/ao-servlet-firewall-webjars/issues</url>
 	</issueManagement>
 
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/aoindustries/ao-servlet-firewall-webjars/actions</url>
+	</ciManagement>
+
 	<repositories>
 		<!-- Repository required here, too, so can find parent -->
 		<repository>
