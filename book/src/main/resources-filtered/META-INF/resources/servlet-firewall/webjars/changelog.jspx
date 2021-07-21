@@ -37,6 +37,7 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2018-06-18T14:06:52-05:00"
+		dateModified="2021-07-21T09:01:36-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -47,9 +48,9 @@ along with ao-servlet-firewall-webjars.  If not, see <http://www.gnu.org/license
 				repository="@{nexusUrl}content/repositories/snapshots/"
 				scmUrl="@{project.scm.url}"
 			>
-				<ol>
+				<ul>
 					<li>New project for <core:link book="/servlet-firewall" page="/index.jspx" /> rules for <ao:a href="https://www.webjars.org/">WebJars</ao:a>.</li>
-				</ol>
+				</ul>
 			</changelog:release>
 		</c:if>
 	</core:page>
