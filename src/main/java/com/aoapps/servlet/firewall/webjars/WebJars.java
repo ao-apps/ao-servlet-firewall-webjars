@@ -36,26 +36,26 @@ import javax.servlet.annotation.WebListener;
 @WebListener("Reserves greedy Path Space for " + WebJars.PREFIX + " (no components in sub-paths may be added).")
 public class WebJars implements ServletContextListener {
 
-	static final String PREFIX = "/webjars/***";
+  static final String PREFIX = "/webjars/***";
 
-	@Override
-	public void contextInitialized(ServletContextEvent event) {
-		FirewallPathSpace.getInstance(event.getServletContext()).add(
-			FirewallComponent.newInstance(
-				valueOf(PREFIX), // TODO: Use string overload of newInstance, once it exists
-				// Constraint REQUEST dispatcher to GET only
-				request.dispatcherType.isRequest(
-					request.method.constrain(request.method.GET),
-					chain.doFilter
-				),
-				// Drop everything else
-				response.sendError.FORBIDDEN
-			)
-		);
-	}
+  @Override
+  public void contextInitialized(ServletContextEvent event) {
+    FirewallPathSpace.getInstance(event.getServletContext()).add(
+      FirewallComponent.newInstance(
+        valueOf(PREFIX), // TODO: Use string overload of newInstance, once it exists
+        // Constraint REQUEST dispatcher to GET only
+        request.dispatcherType.isRequest(
+          request.method.constrain(request.method.GET),
+          chain.doFilter
+        ),
+        // Drop everything else
+        response.sendError.FORBIDDEN
+      )
+    );
+  }
 
-	@Override
-	public void contextDestroyed(ServletContextEvent event) {
-		// Do nothing
-	}
+  @Override
+  public void contextDestroyed(ServletContextEvent event) {
+    // Do nothing
+  }
 }
