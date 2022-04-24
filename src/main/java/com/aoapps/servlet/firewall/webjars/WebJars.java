@@ -41,16 +41,16 @@ public class WebJars implements ServletContextListener {
   @Override
   public void contextInitialized(ServletContextEvent event) {
     FirewallPathSpace.getInstance(event.getServletContext()).add(
-      FirewallComponent.newInstance(
-        valueOf(PREFIX), // TODO: Use string overload of newInstance, once it exists
-        // Constraint REQUEST dispatcher to GET only
-        request.dispatcherType.isRequest(
-          request.method.constrain(request.method.GET),
-          chain.doFilter
-        ),
-        // Drop everything else
-        response.sendError.FORBIDDEN
-      )
+        FirewallComponent.newInstance(
+            valueOf(PREFIX), // TODO: Use string overload of newInstance, once it exists
+            // Constraint REQUEST dispatcher to GET only
+            request.dispatcherType.isRequest(
+                request.method.constrain(request.method.GET),
+                chain.doFilter
+            ),
+            // Drop everything else
+            response.sendError.FORBIDDEN
+        )
     );
   }
 
