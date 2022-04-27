@@ -28,4 +28,4 @@ module com.aoapps.servlet.firewall.webjars {
   requires com.aoapps.servlet.firewall.pathspace; // <groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-path-space</artifactId>
   requires com.aoapps.servlet.firewall.rules; // <groupId>com.aoapps</groupId><artifactId>ao-servlet-firewall-rules</artifactId>
   requires javax.servlet.api; // <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
-}
+} // TODO: Avoiding rewrite-maven-plugin-4.22.2 truncation
