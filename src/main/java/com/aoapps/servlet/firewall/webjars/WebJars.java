@@ -24,6 +24,8 @@
 package com.aoapps.servlet.firewall.webjars;
 
 import static com.aoapps.net.pathspace.Prefix.valueOf;
+
+import com.aoapps.net.pathspace.PathSpace;
 import com.aoapps.servlet.firewall.pathspace.FirewallComponent;
 import com.aoapps.servlet.firewall.pathspace.FirewallPathSpace;
 import com.aoapps.servlet.firewall.rules.Rules.chain;
@@ -33,6 +35,9 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+/**
+ * Reserves greedy {@linkplain PathSpace Path Space} for {@link WebJars#PREFIX} (no components in sub-paths may be added).
+ */
 @WebListener("Reserves greedy Path Space for " + WebJars.PREFIX + " (no components in sub-paths may be added).")
 public class WebJars implements ServletContextListener {
 
