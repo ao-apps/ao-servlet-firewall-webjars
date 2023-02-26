@@ -23,7 +23,7 @@
 * [Project Home](https://oss.aoapps.com/servlet-firewall/webjars/)
 * [Changelog](https://oss.aoapps.com/servlet-firewall/webjars/changelog)
 * [API Docs](https://oss.aoapps.com/servlet-firewall/webjars/apidocs/)
-* [Maven Central Repository](https://search.maven.org/artifact/com.aoapps/ao-servlet-firewall-webjars)
+* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.aoapps&q=a%3Aao-servlet-firewall-webjars)
 * [GitHub](https://github.com/ao-apps/ao-servlet-firewall-webjars)
 
 ## Features
