@@ -8,14 +8,14 @@
 [![semantic versioning: 2.0.0](https://oss.aoapps.com/ao-badges/semver-2.0.0.svg)](https://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://oss.aoapps.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-[![Build](https://github.com/ao-apps/ao-servlet-firewall-webjars/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/ao-apps/ao-servlet-firewall-webjars/actions?query=workflow%3ABuild)
+[![Build](https://github.com/ao-apps/ao-servlet-firewall-webjars/actions/workflows/build.yml/badge.svg?branch=javaee)](https://github.com/ao-apps/ao-servlet-firewall-webjars/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-servlet-firewall-webjars/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-servlet-firewall-webjars)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=com.aoapps%3Aao-servlet-firewall-webjars)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=ncloc)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=ncloc)  
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=Reliability)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=security_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=Security)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=Maintainability)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=coverage)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=Coverage)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=alert_status)](https://sonarcloud.io/dashboard?branch=javaee&id=com.aoapps%3Aao-servlet-firewall-webjars)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=ncloc)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=security_rating)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=Maintainability)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=javaee&project=com.aoapps%3Aao-servlet-firewall-webjars&metric=coverage)](https://sonarcloud.io/component_measures?branch=javaee&id=com.aoapps%3Aao-servlet-firewall-webjars&metric=Coverage)
 
 [AO Servlet Firewall](https://github.com/ao-apps/ao-servlet-firewall) rules for [WebJars](https://www.webjars.org/).
 
