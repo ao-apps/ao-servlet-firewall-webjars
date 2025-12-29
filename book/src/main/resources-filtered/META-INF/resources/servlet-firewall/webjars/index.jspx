@@ -34,7 +34,7 @@ along with ao-servlet-firewall-webjars.  If not, see <https://www.gnu.org/licens
     title="@{documented.name}"
     description="@{documented.description}"
     datePublished="2018-06-18T14:09:27-05:00"
-    dateModified="2025-07-02T23:05:45Z"
+    dateModified="2025-12-28T20:36:14Z"
   >
     <core:child page="changelog.jspx" />
     <core:child page="apidocs/index.jspx" />
@@ -83,11 +83,6 @@ along with ao-servlet-firewall-webjars.  If not, see <https://www.gnu.org/licens
         </li>
         <li>TODO: Block all parameters for canonicalization?  Only allow LastModified?  301/302/307 redirect LastModified when doesn't match current LastModified (impact on clustering?)?</li>
         <li>Small footprint, minimal dependencies - not part of a big monolithic package.</li>
-        <li>Java 1.8 implementation:
-          <ul>
-            <li>Java EE 6+ compatible.</li>
-          </ul>
-        </li>
       </ul>
     </section:section>
     <section:section label="Motivation">
