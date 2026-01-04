@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-servlet-firewall-webjars - AO Servlet Firewall rules for WebJars.
-Copyright (C) 2018, 2019, 2020, 2021, 2022, 2023, 2025  AO Industries, Inc.
+Copyright (C) 2018, 2019, 2020, 2021, 2022, 2023, 2025, 2026  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -34,7 +34,7 @@ along with ao-servlet-firewall-webjars.  If not, see <https://www.gnu.org/licens
     title="@{documented.name}"
     description="@{documented.description}"
     datePublished="2018-06-18T14:09:27-05:00"
-    dateModified="2025-12-28T20:36:14Z"
+    dateModified="2025-12-30T13:42:11Z"
   >
     <core:child page="changelog.jspx" />
     <core:child page="apidocs/index.jspx" />
@@ -78,7 +78,7 @@ along with ao-servlet-firewall-webjars.  If not, see <https://www.gnu.org/licens
       <ul>
         <li>Reserves greedy <core:link book="/servlet-firewall/path-space" page="/index.jspx">Path Space</core:link> for <code>/webjars/***</code> (no components in sub-paths may be added).</li>
         <li>
-          Constrains <ao:a rel="nofollow" href="https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html#getMethod()">request method</ao:a> to
+          Constrains <ao:a rel="nofollow" href="@{documented.javadoc.link.javaee}jakarta/servlet/http/httpservletrequest#getMethod()">request method</ao:a> to
           <code>OPTIONS</code>, <code>HEAD</code>, and <code>GET</code>.
         </li>
         <li>TODO: Block all parameters for canonicalization?  Only allow LastModified?  301/302/307 redirect LastModified when doesn't match current LastModified (impact on clustering?)?</li>

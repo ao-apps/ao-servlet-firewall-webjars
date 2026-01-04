@@ -28,7 +28,7 @@
 
 ## Features
 * Reserves greedy [Path Space](https://github.com/ao-apps/ao-servlet-firewall-path-space) for `/webjars/***` (no components in sub-paths may be added).
-* Constrains [request method](https://docs.oracle.com/javaee/6/api/javax/servlet/http/HttpServletRequest.html#getMethod()) to `OPTIONS`, `HEAD`, and `GET`.
+* Constrains [request method](https://jakarta.ee/specifications/platform/10/apidocs/jakarta/servlet/http/httpservletrequest#getMethod()) to `OPTIONS`, `HEAD`, and `GET`.
 * TODO: Block all parameters for canonicalization?  Only allow LastModified?  301/302/307 redirect LastModified when doesn't match current LastModified (impact on clustering?)?
 * Small footprint, minimal dependencies - not part of a big monolithic package.
 

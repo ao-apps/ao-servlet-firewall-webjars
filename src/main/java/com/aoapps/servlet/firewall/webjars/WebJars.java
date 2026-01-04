@@ -1,6 +1,6 @@
 /*
  * ao-servlet-firewall-webjars - AO Servlet Firewall rules for WebJars.
- * Copyright (C) 2018, 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2018, 2020, 2021, 2022, 2025, 2026  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -31,9 +31,9 @@ import com.aoapps.servlet.firewall.pathspace.FirewallPathSpace;
 import com.aoapps.servlet.firewall.rules.Rules.chain;
 import com.aoapps.servlet.firewall.rules.Rules.request;
 import com.aoapps.servlet.firewall.rules.Rules.response;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
+import jakarta.servlet.ServletContextEvent;
+import jakarta.servlet.ServletContextListener;
+import jakarta.servlet.annotation.WebListener;
 
 /**
  * Reserves greedy {@linkplain PathSpace Path Space} for {@link WebJars#PREFIX} (no components in sub-paths may be added).
